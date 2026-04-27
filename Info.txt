@@ -1,0 +1,50 @@
+Patrimoniu Viu – Reconstruim Trecutul, Salvăm Viitorul Experiență Culturală Imersivă | AR | Storytelling | Activism Civic
+[Buton: Descarcă Aplicația AR] | [Buton: Harta Interactivă] | [Buton: Raportează o Ruină]
+
+--------------------------------------------------------------------------------
+BUCUREȘTIUL NEVĂZUT: TRASEUL RUINELOR
+Dincolo de fațadele de sticlă se ascund poveștile unui oraș lăsat să dispară. Descoperă primele 3 monumente incluse în modulul nostru de reconstrucție virtuală (Time-Travel AR) și află cum poți contribui la salvarea lor.
+
+--------------------------------------------------------------------------------
+1. Cinematograful Marconi – Iluzia pierdută a Căii Griviței
+Locație: Calea Griviței nr. 137, Sector 1
+.
+Datare: Prima jumătate a secolului XX
+.
+Statut: Monument Istoric, Cod LMI B-II-m-B-18890
+.
+Povestea: Situat pe artera istorică ce leagă inima orașului de Gara de Nord, vechiul Cinematograf Marconi stă astăzi mărturie a degradării spațiilor culturale interbelice. Fost pol de atracție pentru bucureșteni, clădirea este acum o umbră a perioadei sale de glorie.
+În aplicația AR: Folosește modulul Hotspots pe fațada degradată. La o simplă atingere, ecranul tău va șterge anii de abandon, reconstruind firma luminoasă originală și readucând sunetul forfotelor urbane specifice Bucureștiului interbelic.
+👉 [Buton: Scanează & Vezi Reconstrucția AR]
+
+--------------------------------------------------------------------------------
+2. Casa Pompiliu Eliade – Capodopera de pe Splai
+Locație: Splaiul Independenței nr. 74, Sector 5
+.
+Datare: 1907
+.
+Statut: Monument Istoric, Cod LMI B-II-m-B-21056
+.
+Povestea: Considerată de iubitorii orașului drept „poate cea mai originală concepție arhitecturală din București”, această clădire splendidă este astăzi complet uitată de istoria orașului și părăsită de bucureșteni
+. Ascunsă sub vegetație sălbatică și degradare, ea așteaptă să fie redescoperită.
+În aplicația AR: Shaderul nostru de tip Ghostly va face o tranziție spectaculoasă (fade-in) de la vegetația care o sufocă astăzi, la detaliile arhitecturale rafinate din 1907. NPC-ul ghidului virtual îți va povesti detaliile acestei bijuterii părăsite.
+👉 [Buton: Atrage Atenția! Trimite o carte poștală virtuală autorităților]
+
+--------------------------------------------------------------------------------
+3. Moara lui Assan – Genocidul arhitecturii industriale
+Locație: Str. Silozului nr. 25, Sector 2
+.
+Datare: 1853
+.
+Statut: Monument Istoric de valoare națională, Cod LMI B-II-m-A-19692
+.
+Povestea: Prima moară cu aburi din România este astăzi simbolul trist al fenomenului de „genocid arhitectural”
+. Lăsată pradă hoților de materiale, moara a suferit incendii devastatoare, intenționate și repetate (precum cel din 2012), având ca scop distrugerea șarpantei și a planșeelor pentru a grăbi prăbușirea zidurilor portante și eliberarea terenului
+.
+În aplicația AR: Privește prin telefon ruina afumată de astăzi și activează funcția „Viziune 2030”. Aplicația va transforma rămășițele într-un hub cultural industrial, demonstrând că regenerarea urbană este alternativa viabilă la distrugerea intenționată.
+👉 [Buton: Semnează Petiția pentru Salvarea Patrimoniului Industrial]
+
+--------------------------------------------------------------------------------
+Implică-te! Fii vocea clădirilor mute.
+Ai văzut un monument în pericol de demolare? Folosește Dashboard-ul de Raportare integrat în colaborare cu platforma 112 Patrimoniu și ajută-ne să cartografiem Bucureștiul în Pericol.
+[Footer] Proiect finanțat de AFCN. Un demers interdisciplinar care combină arta digitală (Unity/ARCore) cu educația civică și istoria urbană. Parteneri: ARCEN (Catalog București), Pro.Do.Mo, Ordinul Arhitecților din România.

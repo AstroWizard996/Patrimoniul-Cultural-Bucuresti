@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrimoniu Viu - Reconstruim Trecutul, Salvăm Viitorul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet Setup for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <div class="logo">Patrimoniu Viu</div>
+        <nav>
+            <a href="#map-section" class="btn-outline">Harta Interactivă</a>
+            <a href="#report" class="btn-outline">Raportează o Ruină</a>
+            <a href="#download" class="btn-primary">Descarcă Aplicația AR</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div id="hero-3d-container"></div>
+            <div class="hero-content">
+                <span class="badge">Experiență Culturală Imersivă</span>
+                <h1>Reconstruim Trecutul, <br><span class="gradient-text">Salvăm Viitorul</span></h1>
+                <p>Dincolo de fațadele de sticlă se ascund poveștile unui oraș lăsat să dispară. Descoperă primele 3 monumente incluse în modulul nostru de reconstrucție virtuală (Time-Travel AR) și află cum poți contribui la salvarea lor.</p>
+                <div class="hero-actions">
+                    <a href="#monuments" class="btn-primary">Explorează Ruinele</a>
+                </div>
+            </div>
+            <div class="hero-bg-glow"></div>
+        </section>
+
+        <section id="map-section" class="map-section">
+            <h2 class="section-title">Harta Monumentelor</h2>
+            <div class="map-container box-glass">
+                <div id="interactive-map"></div>
+            </div>
+        </section>
+
+        <section id="monuments" class="monuments-section">
+            <h2 class="section-title">Bucureștiul Nevăzut: Traseul Ruinelor</h2>
+            
+            <!-- Monument 1 -->
+            <article id="monument-1" class="monument-card">
+                <div class="monument-info">
+                    <div class="monument-meta">
+                        <span class="location">Calea Griviței nr. 137, Sector 1</span>
+                        <span class="date">Prima jumătate a sec. XX</span>
+                    </div>
+                    <h3>Cinematograful Marconi<br><span class="subtitle">Iluzia pierdută a Căii Griviței</span></h3>
+                    <p class="status">Statut: Monument Istoric, Cod LMI B-II-m-B-18890</p>
+                    <p class="story">Situat pe artera istorică ce leagă inima orașului de Gara de Nord, vechiul Cinematograf Marconi stă astăzi mărturie a degradării spațiilor culturale interbelice. Fost pol de atracție pentru bucureșteni, clădirea este acum o umbră a perioadei sale de glorie.</p>
+                    <div class="ar-feature box-glass">
+                        <h4>În aplicația AR:</h4>
+                        <p>Folosește modulul Hotspots pe fațada degradată. La o simplă atingere, ecranul tău va șterge anii de abandon, reconstruind firma luminoasă originală și readucând sunetul forfotelor urbane specifice Bucureștiului interbelic.</p>
+                        <a href="#" class="action-link">👉 Scanează & Vezi Reconstrucția AR</a>
+                    </div>
+                </div>
+                <div class="monument-visual">
+                    <div class="image-comparison">
+                        <img src="assets/1_Now.jpg" alt="Cinematograful Marconi - Acum" class="image-now">
+                        <img src="assets/1.Then.png" alt="Cinematograful Marconi - Atunci" class="image-then">
+                        <div class="comparison-slider">
+                            <div class="slider-line"></div>
+                            <div class="slider-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);"><path d="m9 18 6-6-6-6"/></svg>
+                            </div>
+                        </div>
+                        <div class="label-now">PREZENT</div>
+                        <div class="label-then">TRECUT (AR)</div>
+                    </div>
+                    <p class="image-source">Copyright: Alberto Grosescu</p>
+                </div>
+            </article>
+
+            <!-- Monument 2 -->
+            <article id="monument-2" class="monument-card reversed">
+                <div class="monument-info">
+                    <div class="monument-meta">
+                        <span class="location">Splaiul Independenței nr. 74, Sector 5</span>
+                        <span class="date">1907</span>
+                    </div>
+                    <h3>Casa Pompiliu Eliade<br><span class="subtitle">Capodopera de pe Splai</span></h3>
+                    <p class="status">Statut: Monument Istoric, Cod LMI B-II-m-B-21056</p>
+                    <p class="story">Considerată de iubitorii orașului drept „poate cea mai originală concepție arhitecturală din București”, această clădire splendidă este astăzi complet uitată de istoria orașului și părăsită de bucureșteni. Ascunsă sub vegetație sălbatică și degradare, ea așteaptă să fie redescoperită.</p>
+                    <div class="ar-feature box-glass">
+                        <h4>În aplicația AR:</h4>
+                        <p>Shaderul nostru de tip Ghostly va face o tranziție spectaculoasă (fade-in) de la vegetația care o sufocă astăzi, la detaliile arhitecturale rafinate din 1907. NPC-ul ghidului virtual îți va povesti detaliile acestei bijuterii părăsite.</p>
+                        <a href="#" class="action-link">👉 Atrage Atenția! Trimite o carte poștală virtuală autorităților</a>
+                    </div>
+                </div>
+                <div class="monument-visual">
+                    <div class="image-comparison">
+                        <img src="assets/2_Now.jpg" alt="Casa Pompiliu Eliade - Acum" class="image-now">
+                        <img src="assets/2._Then.png" alt="Casa Pompiliu Eliade - Atunci" class="image-then">
+                        <div class="comparison-slider">
+                            <div class="slider-line"></div>
+                            <div class="slider-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);"><path d="m9 18 6-6-6-6"/></svg>
+                            </div>
+                        </div>
+                        <div class="label-now">PREZENT</div>
+                        <div class="label-then">TRECUT (AR)</div>
+                    </div>
+                    <p class="image-source">Copyright: Mihai Petre</p>
+                </div>
+            </article>
+
+            <!-- Monument 3 -->
+            <article id="monument-3" class="monument-card">
+                <div class="monument-info">
+                    <div class="monument-meta">
+                        <span class="location">Str. Silozului nr. 25, Sector 2</span>
+                        <span class="date">1853</span>
+                    </div>
+                    <h3>Moara lui Assan<br><span class="subtitle">Genocidul arhitecturii industriale</span></h3>
+                    <p class="status">Statut: Monument Istoric de valoare națională, Cod LMI B-II-m-A-19692</p>
+                    <p class="story">Prima moară cu aburi din România este astăzi simbolul trist al fenomenului de „genocid arhitectural”. Lăsată pradă hoților de materiale, moara a suferit incendii devastatoare, intenționate și repetate (precum cel din 2012), având ca scop distrugerea șarpantei și a planșeelor pentru a grăbi prăbușirea zidurilor portante.</p>
+                    <div class="ar-feature box-glass">
+                        <h4>În aplicația AR:</h4>
+                        <p>Privește prin telefon ruina afumată de astăzi și activează funcția „Viziune 2030”. Aplicația va transforma rămășițele într-un hub cultural industrial, demonstrând că regenerarea urbană este alternativa viabilă la distrugerea intenționată.</p>
+                        <a href="#" class="action-link">👉 Semnează Petiția pentru Salvarea Patrimoniului Industrial</a>
+                    </div>
+                </div>
+                <div class="monument-visual">
+                    <div class="image-comparison">
+                        <img src="assets/3_Now.jpg" alt="Moara lui Assan - Acum" class="image-now">
+                        <img src="assets/3.Then.png" alt="Moara lui Assan - Atunci" class="image-then">
+                        <div class="comparison-slider">
+                            <div class="slider-line"></div>
+                            <div class="slider-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);"><path d="m9 18 6-6-6-6"/></svg>
+                            </div>
+                        </div>
+                        <div class="label-now">PREZENT</div>
+                        <div class="label-then">TRECUT (AR)</div>
+                    </div>
+                    <p class="image-source">Copyright: Mihai Petre</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="report" class="cta-section">
+            <div class="cta-content box-glass">
+                <h2>Implică-te! Fii vocea clădirilor mute.</h2>
+                <p>Ai văzut un monument în pericol de demolare? Folosește Dashboard-ul de Raportare integrat în colaborare cu platforma 112 Patrimoniu și ajută-ne să cartografiem Bucureștiul în Pericol.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn-primary">Raportează o Ruină</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Patrimoniu Viu</strong> &copy; 2026</p>
+            <p class="footer-details">Disclaimer: Imaginile de reconstrucție sunt generate cu inteligență artificială în scop de prezentare și nu reflectă o reconstrucție finală sau un proiect tehnic.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
