@@ -27,7 +27,7 @@ Statut: Monument Istoric, Cod LMI B-II-m-B-21056
 .
 Povestea: Considerată de iubitorii orașului drept „poate cea mai originală concepție arhitecturală din București”, această clădire splendidă este astăzi complet uitată de istoria orașului și părăsită de bucureșteni
 . Ascunsă sub vegetație sălbatică și degradare, ea așteaptă să fie redescoperită.
-În aplicația AR: Shaderul nostru de tip Ghostly va face o tranziție spectaculoasă (fade-in) de la vegetația care o sufocă astăzi, la detaliile arhitecturale rafinate din 1907. NPC-ul ghidului virtual îți va povesti detaliile acestei bijuterii părăsite.
+În aplicația AR: Shaderul nostru de tip Ghostly va face o tranziție spectaculoasă (fade-in) de la vegetația care o sufocă astăzi, la detaliile arhitecturale rafinate din 1907. Personajul ghidului virtual îți va povesti detaliile acestei bijuterii părăsite.
 👉 [Buton: Atrage Atenția! Trimite o carte poștală virtuală autorităților]
 
 --------------------------------------------------------------------------------
